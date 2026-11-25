@@ -1,0 +1,283 @@
+body{
+  height: auto;
+  overflow: visible;
+  flex: 1 0 auto;
+}
+
+.page-text{
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 60px;
+}
+
+.text-title{
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+  margin-bottom: 0px;
+}
+
+.text-subtitle{
+  margin-top: 10px;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.about-content{
+  font-family: "Outfit", sans-serif;
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.about-card{
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+}
+
+.about-main{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-photo{
+  flex-shrink: 0;
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.about-row{
+  display: flex;
+  gap: 30px;
+}
+
+.about-row .about-card{
+  flex: 1;
+}
+
+.about-heading{
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.about-paragraph{
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.about-item-title{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.about-item-sub{
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.edu-item{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.edu-item .about-item-sub{
+  margin-bottom: 0px;
+}
+
+.edu-logo{
+  flex-shrink: 0;
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+  background-color: white;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.skill-tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag{
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 30px;
+}
+
+.home-button{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  transition: 0.2s;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.15);
+}
+
+.home-button:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.home-button:active{
+  transform: translate(2px, 2px);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.buttons-home{
+  margin-bottom: 50px;
+}
+
+.life-text{
+  margin-top: 30px;
+}
+
+.life-main{
+  display: flex;
+  gap: 40px;
+}
+
+.life-block{
+  flex: 1;
+}
+
+.hobby-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.hobby-item{
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.hobby-item .about-item-title{
+  margin-bottom: 5px;
+}
+
+.hobby-item .about-item-sub{
+  margin-bottom: 0px;
+}
+
+.photo-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.photo-item{
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.photo-img:hover{
+  transform: translateY(-5px);
+  box-shadow: 2px 6px 5px rgba(0, 0, 0, 0.3);
+}
+
+.photo-placeholder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.15);
+  color: white;
+  font-size: 20px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: default;
+}
+
+.photo-caption{
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.photo-viewer{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 100;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.photo-viewer.open{
+  display: flex;
+}
+
+.photo-viewer-img{
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 20px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.photo-viewer-caption{
+  font-family: "Outfit", sans-serif;
+  color: white;
+  font-size: 20px;
+  margin-top: 15px;
+}
